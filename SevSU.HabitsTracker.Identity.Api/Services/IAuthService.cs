@@ -5,4 +5,5 @@ namespace SevSU.HabitsTracker.Identity.Api.Services;
 public interface IAuthService
 {
     Task<Guid> Register(RegisterRequestDto request, CancellationToken cancellationToken);
+    Task<LoginResponseDto> Login(LoginRequestDto request, CancellationToken cancellationToken);
 }

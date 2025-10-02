@@ -1,6 +1,6 @@
 namespace SevSU.HabitsTracker.Identity.Api.Models.Entities;
 
-public class User
+public sealed class User
 {
     public Guid Id { get; set; }
     public required string Email { get; set; }
