@@ -6,4 +6,5 @@ public interface IAuthService
 {
     Task<Guid> Register(RegisterRequestDto request, CancellationToken cancellationToken);
     Task<LoginResponseDto> Login(LoginRequestDto request, CancellationToken cancellationToken);
+    Task<RefreshResponseDto> Refresh(RefreshRequestDto request, CancellationToken cancellationToken);
 }
